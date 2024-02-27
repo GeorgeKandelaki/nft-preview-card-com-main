@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.8rem;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.red {
+    background-color: hsl(178, 100%, 50%);
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+.margin-bottom-md {
+    margin-bottom: 2.4rem;
+}
+
+.heading-tertuary {
+    color: white;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.main-frame {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img-box {
+    position: relative;
+}
+
+.product-img {
+    width: 100%;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.hover-img {
+    display: none;
+    position: absolute;
+    left: 43%;
+    bottom: 48%;
+    cursor: pointer;
+}
+
+.product {
+    background-color: hsl(216, 50%, 16%);
+    padding: 2.4rem 2rem;
+    border-radius: 1rem;
+    width: 35rem;
+    box-shadow: 0 0 15rem rgba(0, 0, 0, 0.6);
+}
+
+.description {
+    color: hsl(215, 51%, 70%);
+}
+
+.price-info-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price,
+.days-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+}
+
+.days-left {
+    color: hsl(215, 51%, 70%);
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border-top: solid 1px hsl(215, 32%, 27%);
+    padding-top: 2.4rem;
+    color: hsl(215, 51%, 70%);
+}
+
+.name {
+    color: white;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.creator-img {
+    width: 10%;
+    border: solid 1px white;
+    border-radius: 50%;
+}
+
+.heading-tertuary:hover,
+.heading-tertuary:active,
+.name:hover,
+.name:active {
+    color: hsl(178, 100%, 50%);
+}
+
+.product-img-box:hover .hover-img {
+    display: block;
+}
+
+.product-img-box {
+    position: relative;
+}
+
+.product-img {
+    width: 100%;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.hover-img {
+    display: none;
+    position: absolute;
+    left: 43%;
+    bottom: 48%;
+    cursor: pointer;
+}
+
+.product {
+    background-color: hsl(216, 50%, 16%);
+    padding: 2.4rem 2rem;
+    border-radius: 1rem;
+    width: 35rem;
+    box-shadow: 0 0 15rem rgba(0, 0, 0, 0.6);
+}
+
+.product-img-box:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 92%;
+    background-color: rgba(0, 255, 255, 0.5);
+    z-index: 1;
+}
+
+.product-img-box:hover .hover-img {
+    display: block;
+    z-index: 2;
+}
